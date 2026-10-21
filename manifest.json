@@ -1,16 +1,27 @@
 {
-  "name": "Marwa CutePod",
+  "id": "./",
+  "name": "Marwa's CutePod",
   "short_name": "CutePod",
-  "description": "Marwa's cute iPod Android App - by marwa abouzrar",
-  "start_url": "./index.html",
+  "description": "Marwa's CutePod - Your music, your style",
+  "lang": "en",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#ffd6e8",
-  "theme_color": "#ffb8d1",
+  "orientation": "portrait",
+  "background_color": "#fff4fb",
+  "theme_color": "#f5a9cf",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/138/138817.png",
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
