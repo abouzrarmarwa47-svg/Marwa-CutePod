@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffe4f1">
+<title>Marwa's CutePod</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#ffe4f1,#e5e1ff);font-family:Arial,sans-serif;color:#754b70}
+.pod{width:300px;padding:24px 20px;background:#fff8fc;border:5px solid white;border-radius:38px;box-shadow:0 15px 40px #b88ca955;text-align:center}
+h1{font-size:23px}
+.screen{background:linear-gradient(145deg,#fbd5e8,#e8ddff);padding:20px 10px;border-radius:20px;margin:20px 0}
+.heart{font-size:55px}
+.wheel{width:180px;height:180px;margin:20px auto 0;border-radius:50%;background:white;display:flex;align-items:center;justify-content:center;position:relative;border:2px solid #f1d8eb}
+.center{width:65px;height:65px;border-radius:50%;background:#f5d9ec;border:2px solid white}
+button{border:0;background:#f7d8eb;color:#754b70;padding:12px;border-radius:15px;font-weight:bold;cursor:pointer}
+.top{position:absolute;top:12px}.bottom{position:absolute;bottom:12px}.left{position:absolute;left:12px}.right{position:absolute;right:12px}
+</style>
+</head>
+<body>
+<main class="pod">
+<div>♡ M A R W A ♡</div>
+<h1>Marwa's CutePod 🎀</h1>
+<section class="screen">
+<div class="heart">🩷</div>
+<h2 id="title">My Cute World</h2>
+<p id="message">A little world full of love ✨</p>
+</section>
+<div>♡ Choose your mood ♡</div>
+<div class="wheel">
+<button class="top" onclick="show('Love','Sending you hugs and love! 💗')">LOVE</button>
+<button class="left" onclick="show('Music','Your happy little melody 🎵')">♪</button>
+<button class="right" onclick="show('Dreams','Dream big, sparkle more ✨')">✦</button>
+<button class="bottom" onclick="show('Cute','Stay soft and lovely 🐰')">CUTE</button>
+<div class="center"></div>
+</div>
+<p>Made with ♡ just for Marwa</p>
+</main>
+<script>
+function show(title,message){
+document.getElementById('title').textContent=title;
+document.getElementById('message').textContent=message;
+}
+</script>
+</body>
+  </html>
+  
